@@ -1,0 +1,65 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "norse-bold";
+  src: url("norse-bold-webfont.woff2") format("woff2"),
+    url("norse-bold-webfont.woff") format("woff");
+}
+
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  background-image: url("halie-west.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+}
+
+.give-credit {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-left: 25px;
+  align-items: center;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.odin-container {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  justify-content: center;
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.odin-logo {
+  position: relative;
+  width: 75px;
+  height: auto;
+  font: bold 50px;
+}
+
+.odin-container > p {
+  font-size: 60px;
+  font-family: "norse-bold";
+}
