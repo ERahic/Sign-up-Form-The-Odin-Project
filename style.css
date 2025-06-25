@@ -18,6 +18,8 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   display: block;
+  border: none;
+  outline: none;
 }
 
 #container {
@@ -58,7 +60,6 @@ textarea {
   position: relative;
   width: 75px;
   height: auto;
-  font: bold 50px;
 }
 
 .odin-container > p {
@@ -92,7 +93,7 @@ textarea {
   margin-left: 20px;
   width: 550px;
   border: solid 2px black;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
 }
 
@@ -103,14 +104,12 @@ textarea {
 }
 
 .row {
-  background-color: red;
   font-size: 20px;
   display: flex;
   gap: 150px;
 }
 
-.input-pair-1 {
-  background-color: yellow;
+.input-pair {
   font-family: "norse-bold";
   display: flex;
   flex-direction: column;
@@ -129,4 +128,30 @@ input:valid {
 
 input:invalid {
   border: solid 2px red;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 5px 5px 5px black;
+}
+
+.register {
+  display: flex;
+}
+
+button[type="submit"] {
+  margin-top: 5%;
+  margin-left: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: auto;
+  font-family: "norse-bold";
+  font-size: 30px;
+  background-color: #596d48;
+}
+
+.have-account {
+  font-family: "norse-bold";
+  margin-left: 20px;
+  font-size: 25px;
 }
