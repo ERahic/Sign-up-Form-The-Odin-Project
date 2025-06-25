@@ -26,6 +26,7 @@ textarea {
 }
 
 .left-side {
+  position: relative;
   background-image: url("halie-west.jpg");
   background-position: center;
   background-size: cover;
@@ -33,13 +34,14 @@ textarea {
 }
 
 .give-credit {
-  display: block;
   position: absolute;
-  bottom: 0;
-  margin-left: 25px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  bottom: 0;
   color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .odin-container {
@@ -49,7 +51,7 @@ textarea {
   color: whitesmoke;
   justify-content: center;
   margin-top: 150px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .odin-logo {
@@ -62,4 +64,69 @@ textarea {
 .odin-container > p {
   font-size: 60px;
   font-family: "norse-bold";
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: rgb(70, 111, 111);
+}
+
+.introduction > p {
+  font-family: "norse-bold";
+  display: block;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.get-started > p {
+  display: block;
+  font-family: "norse-bold";
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.form-container {
+  display: flex;
+  margin-left: 20px;
+  width: 550px;
+  border: solid 2px black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.row {
+  background-color: red;
+  font-size: 20px;
+  display: flex;
+  gap: 150px;
+}
+
+.input-pair-1 {
+  background-color: yellow;
+  font-family: "norse-bold";
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  gap: 4px;
+}
+
+input {
+  border-radius: 5px;
+  height: 25px;
+}
+
+input:valid {
+  border: solid 2px green;
+}
+
+input:invalid {
+  border: solid 2px red;
 }
